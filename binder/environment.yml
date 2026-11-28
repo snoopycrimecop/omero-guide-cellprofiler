@@ -1,3 +1,4 @@
+name: omero-guide-cellprofiler
 channels:
   - defaults
   - anaconda
@@ -5,7 +6,7 @@ channels:
   - conda-forge
   - ome
 dependencies:
-  - zeroc-ice36-python
+  - ome::zeroc-ice36-python==3.6.5
   - h5py==3.7.0
   - pandas==1.5.3
   - pip
@@ -21,5 +22,6 @@ dependencies:
   - scikit-learn==1.2.2
   - mysqlclient==1.4.6
   - pip:
+    - jupyter==1.0.0
     - ome-zarr
-    - git+https://github.com/CellProfiler/CellProfiler.git@v4.2.4
+    - git+https://github.com/CellProfiler/CellProfiler.git@v4.2.6
